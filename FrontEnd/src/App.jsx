@@ -1,10 +1,9 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Pages/Home";
 import Details from "./Components/Pages/Details";
 import Login from "./Components/Pages/Login";
 import Register from "./Components/Pages/Register";
 import ChangePassword from "./Components/Pages/Account/ChangePassword";
-import CourseEnrolled from "../../../lms-frontend/src/components/CourseEnrolled";
 import WatchCourses from "./Components/Pages/Account/WatchCourses";
 import MyCourses from "./Components/Pages/Account/MyCourses";
 import Courses from "./Components/common/Courses";
@@ -29,6 +28,7 @@ function App() {
           <Route path="/account/my-courses/create" element={<CreateCourse />} />
           <Route path="/account/my-learning" element={<MyLearning />} />
           <Route path="/account/change-password" element={<ChangePassword />} />
+          
           <Route
             path="/account/courses-enrolled"
             element={<CoursesEnrolled />}
